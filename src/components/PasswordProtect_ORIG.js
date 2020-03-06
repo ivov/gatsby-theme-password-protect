@@ -7,7 +7,7 @@ import { setSessionPassword } from '../utils/utils';
 const styles = {
   wrapper: {
     height: '100vh',
-    background: '#2e8b57',
+    background: '#424242',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -16,32 +16,23 @@ const styles = {
   input: {
     width: '100%',
     height: '48px',
-    // borderRadius: '4px',
-    fontSize: "20px",
-    textAlign: "center",
-    border: "0",
-    borderRadius: "6px",
+    borderRadius: '4px'
   },
   button: {
-    margin: "auto",
-    width: '70%',
+    width: '100%',
     height: '48px',
     background: 'rebeccapurple',
     color: '#fff',
-    fontWeight: "bold",
-    fontSize: "14px",
-    border: "0",
-    borderRadius: "20px",
-    // borderRadius: '4px',
-    marginTop: '30px',
-    // textTransform: 'uppercase',
-    fontFamily: 'sans-serif',
-    cursor: "pointer"
+    border: '1px solid rebeccapurple',
+    borderRadius: '4px',
+    marginTop: '16px',
+    textTransform: 'uppercase',
+    fontWeight: '300',
+    fontFamily: 'sans-serif'
   },
   buttonHover: {
-    background: 'goldenrod',
-    color: 'black',
-    fontWeight: "bold",
+    background: '#fff',
+    color: '#000000'
   },
   link: {
     color: '#fff',
@@ -66,10 +57,10 @@ const PasswordProtect = () => {
 
   return (
     <div style={styles.wrapper}>
-      <h1 style={{ color: '#fff', marginBottom: "0px", paddingBottom: "0px" }}>Secret post</h1>
-      <h4 style={{ color: '#fff' }}>Password?</h4>
+      <h1 style={{ color: '#fff' }}>Welcome</h1>
+      <h4 style={{ color: '#fff' }}>Enter Password</h4>
 
-      <form onSubmit={onSubmit} style={{ width: '320px', display: "flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+      <form onSubmit={onSubmit} style={{ width: '320px' }}>
         <input
           name="password"
           type="password"
@@ -87,11 +78,11 @@ const PasswordProtect = () => {
           onMouseEnter={() => buttonHover(true)}
           onMouseLeave={() => buttonHover(false)}
         >
-          Enter!
+          Enter
         </button>
       </form>
 
-      {/* <a
+      <a
         href="https://gitlab.com/mkit/open-source/gatsby-theme-password-protect#readme"
         target="_blank"
         rel="noopener noreferrer"
@@ -103,8 +94,8 @@ const PasswordProtect = () => {
         onMouseLeave={() => themeHover(false)}
       >
         gatsby-theme-password-protect
-      </a> */}
-      {/* <a
+      </a>
+      <a
         href="https://mkit.io"
         target="_blank"
         rel="noopener noreferrer"
@@ -116,7 +107,7 @@ const PasswordProtect = () => {
         onMouseLeave={() => siteHover(false)}
       >
         MK IT
-      </a> */}
+      </a>
     </div>
   );
 };
