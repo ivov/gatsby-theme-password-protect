@@ -62,12 +62,13 @@ const PasswordProtect = () => {
     event.preventDefault();
     setSessionPassword(password);
     window.location.reload(); // eslint-disable-line
-    var elem = document.getElementById('gatsby-focus-wrapper').childNodes[0];
-    elem.removeAttribute('style');
+    // var elem = document.getElementById('gatsby-focus-wrapper').childNodes[0];
+    // elem.removeAttribute('style');
   };
 
   return (
     <div
+      id="pw-wrapper"
       style={{
         height: '100vh',
         background: '#2e8b57',
