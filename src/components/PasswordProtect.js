@@ -17,31 +17,31 @@ const styles = {
     width: '100%',
     height: '48px',
     // borderRadius: '4px',
-    fontSize: "20px",
-    textAlign: "center",
-    border: "0",
-    borderRadius: "6px",
+    fontSize: '20px',
+    textAlign: 'center',
+    border: '0',
+    borderRadius: '6px'
   },
   button: {
-    margin: "auto",
+    margin: 'auto',
     width: '70%',
     height: '48px',
     background: 'rebeccapurple',
     color: '#fff',
-    fontWeight: "bold",
-    fontSize: "14px",
-    border: "0",
-    borderRadius: "20px",
+    fontWeight: 'bold',
+    fontSize: '14px',
+    border: '0',
+    borderRadius: '20px',
     // borderRadius: '4px',
     marginTop: '30px',
     // textTransform: 'uppercase',
     fontFamily: 'sans-serif',
-    cursor: "pointer"
+    cursor: 'pointer'
   },
   buttonHover: {
     background: 'goldenrod',
     color: 'black',
-    fontWeight: "bold",
+    fontWeight: 'bold'
   },
   link: {
     color: '#fff',
@@ -65,11 +65,31 @@ const PasswordProtect = () => {
   };
 
   return (
-    <div style={styles.wrapper}>
-      <h1 style={{ color: '#fff', marginBottom: "0px", paddingBottom: "0px" }}>Secret post</h1>
+    <div
+      style={{
+        height: '100vh',
+        background: '#2e8b57',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}
+    >
+      <h1 style={{ color: '#fff', marginBottom: '0px', paddingBottom: '0px' }}>
+        Secret post
+      </h1>
       <h4 style={{ color: '#fff' }}>Password?</h4>
 
-      <form onSubmit={onSubmit} style={{ width: '320px', display: "flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+      <form
+        onSubmit={onSubmit}
+        style={{
+          width: '320px',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+      >
         <input
           name="password"
           type="password"
