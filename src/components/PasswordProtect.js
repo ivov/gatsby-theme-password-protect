@@ -62,7 +62,7 @@ const PasswordProtect = () => {
     event.preventDefault();
     setSessionPassword(password);
     // window.location.reload(); // eslint-disable-line
-    window.location.assign('https://ivov.dev/posts/jshp'); // eslint-disable-line
+    navigate('https://ivov.dev/posts/jshp'); // eslint-disable-line
   };
 
   return (
