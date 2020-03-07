@@ -62,8 +62,6 @@ const PasswordProtect = () => {
     event.preventDefault();
     setSessionPassword(password);
     window.location.reload(); // eslint-disable-line
-    // var elem = document.getElementById('gatsby-focus-wrapper').childNodes[0];
-    // elem.removeAttribute('style');
   };
 
   return (
@@ -79,7 +77,7 @@ const PasswordProtect = () => {
       }}
     >
       <h1 style={{ color: '#fff', marginBottom: '0px', paddingBottom: '0px' }}>
-        Secret post
+        Protected post
       </h1>
       <h4 style={{ color: '#fff' }}>Password?</h4>
 
