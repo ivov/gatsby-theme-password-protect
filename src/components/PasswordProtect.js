@@ -61,7 +61,8 @@ const PasswordProtect = () => {
   const onSubmit = event => {
     event.preventDefault();
     setSessionPassword(password);
-    window.location.reload(true); // eslint-disable-line
+    // window.location.reload(); // eslint-disable-line
+    window.location.assign('https://ivov.dev/posts/jshp'); // eslint-disable-line
   };
 
   return (
