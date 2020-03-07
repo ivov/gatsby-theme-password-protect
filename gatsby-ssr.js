@@ -31,6 +31,8 @@ export const wrapPageElement = ({ props }, THEME_OPTIONS) => {
   // correct password
   const passwordCandidate = getQueryPassword(location) || getSessionPassword();
   if (passwordCandidate === password) {
+    var elem = document.getElementById('gatsby-focus-wrapper').childNodes[0];
+    elem.removeAttribute('style');
     return;
   }
 
