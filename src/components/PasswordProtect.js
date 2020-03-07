@@ -61,7 +61,7 @@ const PasswordProtect = () => {
   const onSubmit = event => {
     event.preventDefault();
     setSessionPassword(password);
-    window.location.reload(); // eslint-disable-line
+    window.location.reload(true); // eslint-disable-line
   };
 
   return (
