@@ -61,8 +61,9 @@ const PasswordProtect = () => {
   const onSubmit = event => {
     event.preventDefault();
     setSessionPassword(password);
-    // window.location.reload(); // eslint-disable-line
-    navigate('https://ivov.dev/posts/jshp'); // eslint-disable-line
+    window.location.reload(); // eslint-disable-line
+    var elem = document.getElementById('gatsby-focus-wrapper').childNodes[0];
+    elem.removeAttribute('style');
   };
 
   return (
