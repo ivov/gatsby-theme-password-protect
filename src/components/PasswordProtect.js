@@ -5,20 +5,12 @@ import React, { useState } from 'react';
 import { setSessionPassword } from '../utils/utils';
 
 const styles = {
-  wrapper: {
-    height: '100vh',
-    background: "white",
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
   input: {
     width: '100%',
     height: '48px',
     // borderRadius: '4px',
     fontSize: '20px',
-    textAlign: 'center',
+    textAlign: 'left',
     border: '1px black solid',
     borderRadius: '2px'
   },
@@ -70,12 +62,12 @@ const PasswordProtect = () => {
       <form
         onSubmit={onSubmit}
         style={{
-          marginTop: "60px",
+          margin: '40px',
           width: '320px',
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center'
+          justifyContent: 'flex-start',
+          alignItems: 'flex-start'
         }}
       >
         <input
