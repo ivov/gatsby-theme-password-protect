@@ -24,8 +24,7 @@ const styles = {
   },
   button: {
     margin: 'auto',
-    width: '70%',
-    height: '48px',
+    padding: "12px 6px",
     background: 'black',
     color: '#fff',
     fontWeight: 'bold',
@@ -69,7 +68,7 @@ const PasswordProtect = () => {
       id="pw-wrapper"
       style={{
         height: '100vh',
-        background: '#2e8b57',
+        background: 'white',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
