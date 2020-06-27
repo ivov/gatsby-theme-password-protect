@@ -19,12 +19,12 @@ const styles = {
     // borderRadius: '4px',
     fontSize: '20px',
     textAlign: 'center',
-    border: '0',
+    border: '1px black solid',
     borderRadius: '2px'
   },
   button: {
     margin: 'auto',
-    padding: "12px 6px",
+    padding: "8px 20px",
     background: 'black',
     color: '#fff',
     fontWeight: 'bold',
