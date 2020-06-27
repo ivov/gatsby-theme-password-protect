@@ -66,18 +66,11 @@ const PasswordProtect = () => {
   return (
     <div
       id="pw-wrapper"
-      style={{
-        height: '100vh',
-        background: 'white',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}
     >
       <form
         onSubmit={onSubmit}
         style={{
+          marginTop: "60px",
           width: '320px',
           display: 'flex',
           flexDirection: 'column',
