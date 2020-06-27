@@ -28,7 +28,7 @@ const styles = {
     background: 'black',
     color: '#fff',
     fontWeight: 'bold',
-    fontSize: '14px',
+    fontSize: '10px',
     border: '0',
     borderRadius: '2px',
     // borderRadius: '4px',
@@ -102,7 +102,7 @@ const PasswordProtect = () => {
           onMouseEnter={() => buttonHover(true)}
           onMouseLeave={() => buttonHover(false)}
         >
-          Enter!
+          ~
         </button>
       </form>
     </div>
